@@ -9,7 +9,11 @@ module.exports = function (options) {
         filter: undefined
     }, options);
     curNode = options.el;
-    while(curNode && curNode !== options.parent) {
+    while(
+        curNode &&
+        curNode !== document &&
+        curNode !== options.parent
+    ) {
         if (matches(curNode, options.filter)) {
             return curNode;
         }
