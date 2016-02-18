@@ -1,6 +1,6 @@
 {
   "name": "bubble-match",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "returns the first element that matches options.filter when tracking parents from options.el to options.parent",
   "author": "",
   "scripts": {
