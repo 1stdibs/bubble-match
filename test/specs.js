@@ -40,4 +40,30 @@ describe("bubble-match", function () {
             filter: '.doesnotmatch'
         }), undefined);
     });
+    it("should evaluate the parent node when finding a matching el if options.matchParent is true", function () {
+        // matchParent: false
+        assert.equal(bubbleMatch({
+            parent: bar,
+            el: child,
+            filter: '.bar',
+            matchParent: false
+        }), undefined);
+
+        // matchParent: true
+        assert.equal(bubbleMatch({
+            parent: bar,
+            el: child,
+            filter: '.bar',
+            matchParent: true
+        }), bar);
+
+        // filter: doesnotmatch
+        assert.equal(bubbleMatch({
+            parent: bar,
+            el: child,
+            filter: '.doesnotmatch',
+            matchParent: true
+        }), undefined);
+
+    });
 });
