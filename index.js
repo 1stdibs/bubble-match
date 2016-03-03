@@ -6,10 +6,11 @@ module.exports = function (options) {
     options = assign({
         el : undefined,
         parent: document,
-        filter: undefined
+        filter: undefined,
+        matchParent: false
     }, options);
     curNode = options.el;
-    while(
+    while (
         curNode &&
         curNode !== document &&
         curNode !== options.parent
@@ -18,5 +19,8 @@ module.exports = function (options) {
             return curNode;
         }
         curNode = curNode.parentNode;
+    }
+    if (options.matchParent && curNode.matches(options.filter)) {
+        return curNode;
     }
 };
