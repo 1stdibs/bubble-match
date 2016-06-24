@@ -16,11 +16,11 @@
   },
   "devDependencies": {
     "dibslint": "^1.2.4",
+    "jsdom": "7.2.2",
     "mocha": "^2.3.4",
     "pre-commit": "^1.1.2"
   },
   "dependencies": {
-    "jsdom": "7.2.2",
     "lodash.assign": "^3.2.0",
     "matches-selector": "^1.0.0"
   },
