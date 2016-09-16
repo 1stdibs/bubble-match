@@ -1,6 +1,6 @@
 {
   "name": "bubble-match",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "returns the first element that matches options.filter when tracking parents from options.el to options.parent",
   "author": "1stdibs.com, Inc.",
   "scripts": {
@@ -16,8 +16,8 @@
     ]
   },
   "repository": {
-	"type": "git",
-	"url": "https://github.com/1stdibs/bubble-match"
+    "type": "git",
+    "url": "https://github.com/1stdibs/bubble-match"
   },
   "devDependencies": {
     "dibslint": "^1.2.4",
