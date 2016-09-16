@@ -2,17 +2,22 @@
   "name": "bubble-match",
   "version": "1.0.4",
   "description": "returns the first element that matches options.filter when tracking parents from options.el to options.parent",
-  "author": "",
+  "author": "1stdibs.com, Inc.",
   "scripts": {
     "test": "mocha",
     "gitlint": "node_modules/.bin/dibslint --git --warnings",
     "lint": "dibslint --root=."
   },
+  "license": "MIT",
   "main": "index.js",
   "pre-commit": {
     "run": [
       "gitlint"
     ]
+  },
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/1stdibs/bubble-match"
   },
   "devDependencies": {
     "dibslint": "^1.2.4",
@@ -23,6 +28,5 @@
   "dependencies": {
     "lodash.assign": "^3.2.0",
     "matches-selector": "^1.0.0"
-  },
-  "license": "ISC"
+  }
 }
